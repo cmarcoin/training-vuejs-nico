@@ -1,0 +1,76 @@
+{
+    "products": [
+        {
+            "id": "47050",
+            "label": "Cookies fourrés au Chocolat noir 175g",
+            "manufacturer": "Le Moulin du Pivert",
+            "description": "Cookies bio fourrés au Chocolat noir de la marque Le Moulin du Pivert, sans œuf. Garanti sans OGM, sans huile de palme. Recette végétalienne. Paquet de 10 biscuits. Fabriqué en France, dans l'Aveyron. Poids net : 175g.",
+            "price": 2.42,
+            "image": "https://static.greenweez.com/images/products/47000/600/le-moulin-du-pivert-cookies-fourres-au-chocolat-noir-175g.jpg",
+            "slug": "le-moulin-du-pivert-cookies-fourres-au-chocolat-noir-175g",
+            "categoryId": "3492"
+        },
+        {
+            "id": "47207",
+            "label": "Cookies chocolat noisettes 200g",
+            "manufacturer": "Bisson",
+            "description": "12 biscuits bio aux pépites de chocolat et éclats de noisettes. Ingrédients issus de l'agriculture biologique. 200g",
+            "price": 3.29,
+            "image": "https://static.greenweez.com/images/products/117000/600/bisson-cookies-chocolat-noisettes-200g.jpg",
+            "slug": "bisson-cookies-chocolat-noisettes-200g",
+            "categoryId": "3492"
+        },
+        {
+            "id": "118170",
+            "label": "Biscuits enfants pépites de chocolat 6x6 biscuits 102g",
+            "manufacturer": "Farm Brothers",
+            "description": "Biscuits pour enfants aux pépites de chocolat. Ingrédients issus de l'agriculture biologique. Sans huile de palme. 6x6 biscuits. 102g.",
+            "price": 3.1,
+            "image": "https://static.greenweez.com/images/products/118000/600/farm-brothers-biscuits-enfants-pepites-de-chocolat-6x6-biscuits-102g.jpg",
+            "slug": "farm-brothers-biscuits-enfants-pepites-de-chocolat-6x6-biscuits-102g",
+            "categoryId": "3492"
+        },
+        {
+            "id": "119230",
+            "label": "Sauce tomate basilic 510g",
+            "manufacturer": "Priméal",
+            "description": "Sauce tomate basilic, idéale pour accompagner vos pâtes et céréales. Fabrication française. Contenance : 510g.",
+            "price": 3.44,
+            "image": "https://static.greenweez.com/images/products/119000/600/primeal-sauce-tomate-basilic-510g.jpg",
+            "slug": "primeal-sauce-tomate-basilic-510g",
+            "categoryId": "2181"
+        },
+        {
+            "id": "18126",
+            "label": "Sauce Soja Tamari strong 1L",
+            "manufacturer": "Lima",
+            "description": "Sauce Soja Tamari Strong de la marque Lima. Bouteille de 1L.",
+            "price": 8.88,
+            "image": "https://static.greenweez.com/images/products/18000/600/lima-sauce-soja-tamari-strong-1l.jpg",
+            "slug": "lima-sauce-soja-tamari-strong-1l",
+            "categoryId": "2181"
+        },
+        {
+            "id": "87416",
+            "label": "Pesto alla genovese 190gr",
+            "manufacturer": "Bio Naturae",
+            "description": "Pesto alla genovese: un Grand classique de la cuisine italienne élaboré à partir d’un basilic 100% Italie. 500gr",
+            "price": 2.82,
+            "image": "https://static.greenweez.com/images/products/87000/600/bionaturae-pesto-alla-genovese-190g.jpg",
+            "slug": "bionaturae-pesto-alla-genovese-190gr",
+            "categoryId": "2181"
+        }
+    ],
+    "categories": [
+        {
+            "id": "3492",
+            "label": "Cookie et sablé chocolat",
+            "slug": "cookies-bio"
+        },
+        {
+            "id": "2181",
+            "label": "Sauces",
+            "slug": "sauces"
+        }
+    ]
+}
