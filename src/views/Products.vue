@@ -3,14 +3,18 @@
     <b-spinner type="grow" label="Spinning"></b-spinner>
   </section>
   <section v-else>
-    <p>{{ products }}</p>
+    <AppListing :items="products" />
   </section>
 </template>
 
 <script>
 import axios from "axios";
+import AppListing from "../components/AppListing";
 
 export default {
+  components: {
+    AppListing
+  },
   data() {
     return {
       isLoading: true,
