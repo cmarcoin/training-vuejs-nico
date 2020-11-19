@@ -14,7 +14,7 @@
           />
         </template>
         <template #col-image="{ value }">
-          <img :src="value" width="150" alt="" />
+          <img :src="value.image" width="150" alt="" />
         </template>
         <template #col-isChecked="{ value }">
           <input
