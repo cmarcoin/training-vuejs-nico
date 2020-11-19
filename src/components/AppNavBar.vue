@@ -10,6 +10,7 @@
           <b-nav-item :to="{ name: 'Home' }">Accueil</b-nav-item>
           <b-nav-item :to="{ name: 'About' }">A propos</b-nav-item>
           <b-nav-item :to="{ name: 'Products' }">Produits</b-nav-item>
+          <b-nav-item :to="{ name: 'Products2' }">Produits 2</b-nav-item>
         </b-navbar-nav>
 
         <!-- Right aligned nav items -->
