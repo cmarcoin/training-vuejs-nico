@@ -8,7 +8,8 @@
             "price": 2.42,
             "image": "https://static.greenweez.com/images/products/47000/600/le-moulin-du-pivert-cookies-fourres-au-chocolat-noir-175g.jpg",
             "slug": "le-moulin-du-pivert-cookies-fourres-au-chocolat-noir-175g",
-            "categoryId": "3492"
+            "categoryId": "3492",
+            "isChecked": true
         },
         {
             "id": "47207",
@@ -18,7 +19,8 @@
             "price": 3.29,
             "image": "https://static.greenweez.com/images/products/117000/600/bisson-cookies-chocolat-noisettes-200g.jpg",
             "slug": "bisson-cookies-chocolat-noisettes-200g",
-            "categoryId": "3492"
+            "categoryId": "3492",
+            "isChecked": false
         },
         {
             "id": "118170",
@@ -28,7 +30,8 @@
             "price": 3.1,
             "image": "https://static.greenweez.com/images/products/118000/600/farm-brothers-biscuits-enfants-pepites-de-chocolat-6x6-biscuits-102g.jpg",
             "slug": "farm-brothers-biscuits-enfants-pepites-de-chocolat-6x6-biscuits-102g",
-            "categoryId": "3492"
+            "categoryId": "3492",
+            "isChecked": false
         },
         {
             "id": "119230",
@@ -38,7 +41,8 @@
             "price": 3.44,
             "image": "https://static.greenweez.com/images/products/119000/600/primeal-sauce-tomate-basilic-510g.jpg",
             "slug": "primeal-sauce-tomate-basilic-510g",
-            "categoryId": "2181"
+            "categoryId": "2181",
+            "isChecked": false
         },
         {
             "id": "18126",
@@ -48,7 +52,8 @@
             "price": 8.88,
             "image": "https://static.greenweez.com/images/products/18000/600/lima-sauce-soja-tamari-strong-1l.jpg",
             "slug": "lima-sauce-soja-tamari-strong-1l",
-            "categoryId": "2181"
+            "categoryId": "2181",
+            "isChecked": false
         },
         {
             "id": "87416",
@@ -58,7 +63,8 @@
             "price": 2.82,
             "image": "https://static.greenweez.com/images/products/87000/600/bionaturae-pesto-alla-genovese-190g.jpg",
             "slug": "bionaturae-pesto-alla-genovese-190gr",
-            "categoryId": "2181"
+            "categoryId": "2181",
+            "isChecked": false
         },
         {
             "id": "54654",
@@ -68,7 +74,8 @@
             "price": 2.82,
             "image": "https://static.greenweez.com/images/products/87000/600/bionaturae-pesto-alla-genovese-190g.jpg",
             "slug": "bionaturae-pesto-alla-genovese-190gr",
-            "categoryId": "2181"
+            "categoryId": "2181",
+            "isChecked": false
         },
         {
             "id": "7645",
@@ -78,7 +85,8 @@
             "price": 2.82,
             "image": "https://static.greenweez.com/images/products/87000/600/bionaturae-pesto-alla-genovese-190g.jpg",
             "slug": "bionaturae-pesto-alla-genovese-190gr",
-            "categoryId": "2181"
+            "categoryId": "2181",
+            "isChecked": false
         },
         {
             "id": "789546",
@@ -88,7 +96,8 @@
             "price": 2.82,
             "image": "https://static.greenweez.com/images/products/87000/600/bionaturae-pesto-alla-genovese-190g.jpg",
             "slug": "bionaturae-pesto-alla-genovese-190gr",
-            "categoryId": "2181"
+            "categoryId": "2181",
+            "isChecked": false
         },
         {
             "id": "32165",
@@ -98,7 +107,8 @@
             "price": 2.82,
             "image": "https://static.greenweez.com/images/products/87000/600/bionaturae-pesto-alla-genovese-190g.jpg",
             "slug": "bionaturae-pesto-alla-genovese-190gr",
-            "categoryId": "2181"
+            "categoryId": "2181",
+            "isChecked": false
         },
         {
             "id": "44555666",
@@ -108,7 +118,8 @@
             "price": 2.82,
             "image": "https://static.greenweez.com/images/products/87000/600/bionaturae-pesto-alla-genovese-190g.jpg",
             "slug": "bionaturae-pesto-alla-genovese-190gr",
-            "categoryId": "2181"
+            "categoryId": "2181",
+            "isChecked": false
         }
     ],
     "categories": [

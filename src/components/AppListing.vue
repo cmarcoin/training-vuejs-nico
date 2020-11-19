@@ -6,7 +6,11 @@
       :per-page="perPage"
       :current-page="currentPage"
       small
-    ></b-table>
+    >
+      <template v-slot:cell(Image)="{ row }">
+        {{ row }}
+      </template>
+    </b-table>
     <b-pagination
       v-model="currentPage"
       :total-rows="rows"
