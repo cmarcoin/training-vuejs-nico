@@ -5,6 +5,19 @@
     </section>
     <section v-else>
       <h1>Produits version 2</h1>
+      <div>
+        <AppTablePagination
+          v-model="currentPage"
+          :total-rows="rows"
+          :per-page="perPage"
+        />
+        <ul>
+          <li>{{ currentPage }}</li>
+          <li>{{ rows }}</li>
+          <li>{{ perPage }}</li>
+          <li></li>
+        </ul>
+      </div>
       <AppTable :items="products">
         <template #heading-isChecked>
           <input
@@ -24,7 +37,6 @@
           />
         </template>
       </AppTable>
-      <AppTablePagination></AppTablePagination>
     </section>
   </div>
 </template>
@@ -43,7 +55,8 @@ export default {
     return {
       isLoading: true,
       products: null,
-      values: false
+      currentPage: 1,
+      perPage: 3
     };
   },
   mounted() {
@@ -53,6 +66,11 @@ export default {
       .finally(() => {
         this.isLoading = false;
       });
+  },
+  computed: {
+    rows() {
+      return this.products.length;
+    }
   },
   methods: {
     checkEverything(event) {
