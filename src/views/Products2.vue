@@ -11,14 +11,12 @@
           :total-rows="rows"
           :per-page="perPage"
         />
-        <ul>
-          <li>{{ currentPage }}</li>
-          <li>{{ rows }}</li>
-          <li>{{ perPage }}</li>
-          <li></li>
-        </ul>
       </div>
-      <AppTable :items="products">
+      <AppTable
+        :items="products"
+        :per-page="perPage"
+        :current-page="currentPage"
+      >
         <template #heading-isChecked>
           <input
             type="checkbox"

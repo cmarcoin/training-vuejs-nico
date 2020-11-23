@@ -1,5 +1,7 @@
 <template>
   <div>
+    <p>Page courante : {{ currentPage }}</p>
+    <p>Items à afficher {{ displayedItems.length }}</p>
     <table class="table">
       <thead>
         <tr>
@@ -11,7 +13,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr v-for="(item, index) in items" :key="index">
+        <tr v-for="(item, index) in displayedItems" :key="index">
           <td v-for="(value, idx) in item" :key="idx">
             <slot :name="`col-${idx}`" :value="item">{{ value }}</slot>
           </td>
@@ -27,11 +29,23 @@ export default {
     items: {
       type: Array,
       default: () => []
-    }
+    },
+    perPage: Number,
+    currentPage: Number
   },
   computed: {
     headings() {
       return Object.keys(this.items[0]);
+    },
+    displayedItems() {
+      const chunkedItems = [];
+      let index = 0;
+      while (index < this.items.length) {
+        chunkedItems.push(this.items.slice(index, this.perPage + index));
+        index += this.perPage;
+      }
+
+      return chunkedItems[this.currentPage];
     }
   }
 };
