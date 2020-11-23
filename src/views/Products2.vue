@@ -23,7 +23,7 @@
             id="volume"
             name="volume"
             v-model="width"
-            max="150"
+            max="300"
             min="1"
           />
         </template>
@@ -75,10 +75,19 @@ export default {
       .finally(() => {
         this.isLoading = false;
       });
+
+    if (localStorage.currentPage) {
+      this.currentPage = localStorage.currentPage;
+    }
   },
   computed: {
     rows() {
       return this.products.length;
+    }
+  },
+  watch: {
+    currentPage: newCurrentPage => {
+      localStorage.currentPage = newCurrentPage;
     }
   },
   methods: {
