@@ -1,7 +1,5 @@
 <template>
   <div>
-    <p>Page courante : {{ currentPage }}</p>
-    <p>Items à afficher {{ displayedItems.length }}</p>
     <table class="table">
       <thead>
         <tr>
@@ -45,7 +43,9 @@ export default {
         index += this.perPage;
       }
 
-      return chunkedItems[this.currentPage];
+      console.log(chunkedItems);
+
+      return chunkedItems[this.currentPage - 1];
     }
   }
 };

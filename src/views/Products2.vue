@@ -17,6 +17,16 @@
         :per-page="perPage"
         :current-page="currentPage"
       >
+        <template #heading-image>
+          <input
+            type="range"
+            id="volume"
+            name="volume"
+            v-model="width"
+            max="150"
+            min="1"
+          />
+        </template>
         <template #heading-isChecked>
           <input
             type="checkbox"
@@ -25,7 +35,7 @@
           />
         </template>
         <template #col-image="{ value }">
-          <img :src="value.image" width="150" alt="" />
+          <img :src="value.image" :width="width" alt="" />
         </template>
         <template #col-isChecked="{ value }">
           <input
@@ -54,7 +64,8 @@ export default {
       isLoading: true,
       products: null,
       currentPage: 1,
-      perPage: 3
+      perPage: 3,
+      width: 150
     };
   },
   mounted() {
