@@ -11,14 +11,15 @@
           :total-rows="rows"
           :per-page="perPage"
         />
-        <ul>
-          <li>{{ currentPage }}</li>
-          <li>{{ rows }}</li>
-          <li>{{ perPage }}</li>
-          <li></li>
-        </ul>
       </div>
-      <AppTable :items="products">
+      <AppTable
+        :items="products"
+        :per-page="perPage"
+        :current-page="currentPage"
+      >
+        <template #heading-image>
+          <input type="range" v-model="width" max="300" min="1" />
+        </template>
         <template #heading-isChecked>
           <input
             type="checkbox"
@@ -27,7 +28,7 @@
           />
         </template>
         <template #col-image="{ value }">
-          <img :src="value.image" width="150" alt="" />
+          <img :src="value.image" :width="width" alt="" />
         </template>
         <template #col-isChecked="{ value }">
           <input
@@ -43,20 +44,23 @@
 
 <script>
 import axios from "axios";
-import AppTable from "../components/AppTable";
-import AppTablePagination from "../components/AppTablePagination";
+import AppTable from "@/components/AppTable";
+import AppTablePagination from "@/components/AppTablePagination";
+import localStorageMixin from "@/mixins/localStorage";
 
 export default {
   components: {
     AppTable,
     AppTablePagination
   },
+  mixins: [localStorageMixin],
   data() {
     return {
       isLoading: true,
       products: null,
       currentPage: 1,
-      perPage: 3
+      perPage: 3,
+      width: 150
     };
   },
   mounted() {
@@ -66,10 +70,19 @@ export default {
       .finally(() => {
         this.isLoading = false;
       });
+
+    this.hasStorage("currentPage")
+      ? (this.currentPage = this.getStorage("currentPage"))
+      : (this.currentPage = 1);
   },
   computed: {
     rows() {
       return this.products.length;
+    }
+  },
+  watch: {
+    currentPage(newCurrentPage) {
+      this.setStorage("currentPage", newCurrentPage);
     }
   },
   methods: {
