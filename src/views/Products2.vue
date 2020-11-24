@@ -81,7 +81,7 @@ export default {
     }
   },
   watch: {
-    currentPage: newCurrentPage => {
+    currentPage(newCurrentPage) {
       this.setStorage("currentPage", newCurrentPage);
     }
   },
