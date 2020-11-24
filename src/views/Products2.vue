@@ -18,14 +18,7 @@
         :current-page="currentPage"
       >
         <template #heading-image>
-          <input
-            type="range"
-            id="volume"
-            name="volume"
-            v-model="width"
-            max="300"
-            min="1"
-          />
+          <input type="range" v-model="width" max="300" min="1" />
         </template>
         <template #heading-isChecked>
           <input
@@ -51,14 +44,16 @@
 
 <script>
 import axios from "axios";
-import AppTable from "../components/AppTable";
-import AppTablePagination from "../components/AppTablePagination";
+import AppTable from "@/components/AppTable";
+import AppTablePagination from "@/components/AppTablePagination";
+import localStorageMixin from "@/mixins/localStorage";
 
 export default {
   components: {
     AppTable,
     AppTablePagination
   },
+  mixins: [localStorageMixin],
   data() {
     return {
       isLoading: true,
@@ -76,9 +71,9 @@ export default {
         this.isLoading = false;
       });
 
-    if (localStorage.currentPage) {
-      this.currentPage = localStorage.currentPage;
-    }
+    this.hasStorage("currentPage")
+      ? (this.currentPage = this.getStorage("currentPage"))
+      : (this.currentPage = 1);
   },
   computed: {
     rows() {
@@ -87,7 +82,7 @@ export default {
   },
   watch: {
     currentPage: newCurrentPage => {
-      localStorage.currentPage = newCurrentPage;
+      this.setStorage("currentPage", newCurrentPage);
     }
   },
   methods: {

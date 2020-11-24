@@ -28,9 +28,18 @@ export default {
     event: "change"
   },
   props: {
-    totalRows: Number,
-    perPage: Number,
-    currentPage: Number
+    totalRows: {
+      type: Number,
+      default: 0
+    },
+    perPage: {
+      type: Number,
+      default: 0
+    },
+    currentPage: {
+      type: Number,
+      default: 0
+    }
   },
   methods: {
     pageNav(direction) {
