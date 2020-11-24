@@ -9,6 +9,7 @@
     "test:e2e": "vue-cli-service test:e2e",
     "lint": "vue-cli-service lint",
     "api": "json-server --watch db.json --port 3001",
+    "start-api": "nodemon api/app.js",
     "run:app": "start-server-and-test api http://localhost:3001 serve"
   },
   "dependencies": {
